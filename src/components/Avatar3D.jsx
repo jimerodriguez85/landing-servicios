@@ -29,16 +29,16 @@ export default function Avatar3D() {
             <stop offset="100%" stopColor="#d4a070" />
           </linearGradient>
           <linearGradient id="hairDark" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#1a0e08" />
-            <stop offset="100%" stopColor="#2c1810" />
+            <stop offset="0%" stopColor="#0a0a0a" />
+            <stop offset="100%" stopColor="#1a1a1a" />
           </linearGradient>
           <linearGradient id="hairMid" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#3d2217" />
-            <stop offset="100%" stopColor="#2c1810" />
+            <stop offset="0%" stopColor="#1a1a1a" />
+            <stop offset="100%" stopColor="#111111" />
           </linearGradient>
           <linearGradient id="hairHighlight" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" stopColor="#5a3825" />
-            <stop offset="100%" stopColor="#3d2217" />
+            <stop offset="0%" stopColor="#2a2a2a" />
+            <stop offset="100%" stopColor="#1a1a1a" />
           </linearGradient>
           <linearGradient id="topGrad" x1="0%" y1="0%" x2="0%" y2="100%">
             <stop offset="0%" stopColor="#1a1a2e" />
@@ -358,27 +358,27 @@ export default function Avatar3D() {
 
         {/* === FACE === */}
         {/* Eyebrows */}
-        <path d="M104 102 Q111 97 120 100" stroke="#3d2217" strokeWidth="1.8" fill="none" strokeLinecap="round" />
-        <path d="M140 100 Q149 97 156 102" stroke="#3d2217" strokeWidth="1.8" fill="none" strokeLinecap="round" />
+        <path d="M104 102 Q111 97 120 100" stroke="#111" strokeWidth="2" fill="none" strokeLinecap="round" />
+        <path d="M140 100 Q149 97 156 102" stroke="#111" strokeWidth="2" fill="none" strokeLinecap="round" />
 
         {/* Eyes */}
         <ellipse cx="113" cy="112" rx="7" ry="7" fill="white" />
         <ellipse cx="147" cy="112" rx="7" ry="7" fill="white" />
         {/* Iris */}
-        <motion.ellipse cx="114" cy="113" rx="4" ry="4.5" fill="#4a3728"
+        <motion.ellipse cx="114" cy="113" rx="4" ry="4.5" fill="#2a1a0e"
           animate={{ cx: [114, 112, 114] }}
           transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
         />
-        <motion.ellipse cx="148" cy="113" rx="4" ry="4.5" fill="#4a3728"
+        <motion.ellipse cx="148" cy="113" rx="4" ry="4.5" fill="#2a1a0e"
           animate={{ cx: [148, 146, 148] }}
           transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
         />
         {/* Pupils - looking at screen */}
-        <motion.circle cx="113" cy="114" r="2" fill="#1a0e08"
+        <motion.circle cx="113" cy="114" r="2" fill="#111"
           animate={{ cx: [113, 111, 113], cy: [114, 115, 114] }}
           transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
         />
-        <motion.circle cx="147" cy="114" r="2" fill="#1a0e08"
+        <motion.circle cx="147" cy="114" r="2" fill="#111"
           animate={{ cx: [147, 145, 147], cy: [114, 115, 114] }}
           transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
         />
@@ -388,11 +388,29 @@ export default function Avatar3D() {
         <circle cx="112" cy="115" r="0.8" fill="white" opacity="0.4" />
         <circle cx="146" cy="115" r="0.8" fill="white" opacity="0.4" />
 
+        {/* Glasses */}
+        <rect x="100" y="104" width="26" height="20" rx="4" fill="none" stroke="#1a1a2e" strokeWidth="2.2" opacity="0.85" />
+        <rect x="134" y="104" width="26" height="20" rx="4" fill="none" stroke="#1a1a2e" strokeWidth="2.2" opacity="0.85" />
+        {/* Bridge */}
+        <path d="M126 112 Q130 108 134 112" fill="none" stroke="#1a1a2e" strokeWidth="2" opacity="0.85" />
+        {/* Temple arms */}
+        <line x1="100" y1="110" x2="89" y2="108" stroke="#1a1a2e" strokeWidth="2" opacity="0.7" />
+        <line x1="160" y1="110" x2="171" y2="108" stroke="#1a1a2e" strokeWidth="2" opacity="0.7" />
+        {/* Lens reflection */}
+        <motion.rect x="103" y="107" width="6" height="3" rx="1" fill="white" opacity="0.08"
+          animate={{ opacity: [0.05, 0.15, 0.05] }}
+          transition={{ duration: 3, repeat: Infinity }}
+        />
+        <motion.rect x="137" y="107" width="6" height="3" rx="1" fill="white" opacity="0.08"
+          animate={{ opacity: [0.05, 0.15, 0.05] }}
+          transition={{ duration: 3, repeat: Infinity, delay: 0.5 }}
+        />
+
         {/* Eyelashes */}
-        <path d="M105 108 Q107 104 110 106" stroke="#1a0e08" strokeWidth="1" fill="none" />
-        <path d="M103 111 Q105 107 108 109" stroke="#1a0e08" strokeWidth="0.8" fill="none" />
-        <path d="M155 108 Q153 104 150 106" stroke="#1a0e08" strokeWidth="1" fill="none" />
-        <path d="M157 111 Q155 107 152 109" stroke="#1a0e08" strokeWidth="0.8" fill="none" />
+        <path d="M105 108 Q107 104 110 106" stroke="#111" strokeWidth="1" fill="none" />
+        <path d="M103 111 Q105 107 108 109" stroke="#111" strokeWidth="0.8" fill="none" />
+        <path d="M155 108 Q153 104 150 106" stroke="#111" strokeWidth="1" fill="none" />
+        <path d="M157 111 Q155 107 152 109" stroke="#111" strokeWidth="0.8" fill="none" />
 
         {/* Cheek blush */}
         <circle cx="100" cy="126" r="10" fill="url(#cheekBlush)" />
