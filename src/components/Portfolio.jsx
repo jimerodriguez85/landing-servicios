@@ -5,23 +5,23 @@ import { RevealText } from './AnimatedText'
 
 const projects = [
   {
-    title: 'Control de Horas Extras',
-    description: 'Sistema de gestión de horas extras con reportes automáticos y exportación a Excel.',
-    tech: ['React', 'Express', 'SQLite'],
+    title: 'Gestión de Alquileres',
+    description: 'Sistema completo para administrar propiedades, contratos, pagos de alquiler, servicios (luz, gas, internet), ajuste IPC automático, reclamos con fotos y notificaciones por WhatsApp.',
+    tech: ['SvelteKit', 'Prisma', 'SQLite', 'Tailwind'],
     gradient: 'from-neon-pink to-neon-purple',
     mockupType: 'desktop',
   },
   {
-    title: 'CuidarT - Control Salud',
-    description: 'Plataforma de seguimiento de salud con registro de turnos, medicamentos y estudios.',
-    tech: ['React', 'Node.js', 'SQLite'],
+    title: 'ClipWise',
+    description: 'Editor de video con inteligencia artificial. Corte automático de silencios, generación de subtítulos y recorte inteligente. App de escritorio multiplataforma.',
+    tech: ['React', 'Electron', 'Python', 'IA'],
     gradient: 'from-neon-cyan to-neon-green',
     mockupType: 'desktop',
   },
   {
-    title: 'Sistema de Pedidos Online',
-    description: 'E-commerce con carrito, pagos integrados y panel de administración para restaurante.',
-    tech: ['React Native', 'Express', 'PostgreSQL'],
+    title: 'CuidarT - Control Salud',
+    description: 'Plataforma de seguimiento de salud con registro de turnos, medicamentos, estudios y recordatorios automáticos.',
+    tech: ['React', 'Node.js', 'SQLite'],
     gradient: 'from-neon-purple to-neon-pink',
     mockupType: 'mobile',
   },
