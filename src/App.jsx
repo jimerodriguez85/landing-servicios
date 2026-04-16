@@ -18,6 +18,7 @@ import ContactForm from './components/ContactForm'
 import WhatsAppButton from './components/WhatsAppButton'
 import Chatbot from './components/Chatbot'
 import EasterEgg from './components/EasterEgg'
+import PostGenerator from './components/PostGenerator'
 import Coverage from './components/Coverage'
 import Footer from './components/Footer'
 
@@ -45,6 +46,7 @@ export default function App() {
         <AboutMe />
         {/* <Pricing /> */}
         <Blog />
+        <PostGenerator />
         <ContactForm />
         <Coverage />
         <Footer />
