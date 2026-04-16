@@ -12,7 +12,7 @@ import TechStack from './components/TechStack'
 import Stats from './components/Stats'
 import Testimonials from './components/Testimonials'
 import AboutMe from './components/AboutMe'
-import Pricing from './components/Pricing'
+// import Pricing from './components/Pricing'
 import Blog from './components/Blog'
 import ContactForm from './components/ContactForm'
 import WhatsAppButton from './components/WhatsAppButton'
@@ -43,7 +43,7 @@ export default function App() {
         <Stats />
         <Testimonials />
         <AboutMe />
-        <Pricing />
+        {/* <Pricing /> */}
         <Blog />
         <ContactForm />
         <Coverage />
